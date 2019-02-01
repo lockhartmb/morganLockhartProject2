@@ -14,8 +14,8 @@
 
 <body>
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
-    <header>
-        <div class="wrapper">
+    <header class="contact">
+        <div class="wrapper headerFlex">
             <nav class="main">
                 <ul>
                     <li><a href="index.html">Planted</a></li>
@@ -25,57 +25,60 @@
                     <li><a href="contact.html" class="currentPage">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Get in touch</h1>
+            <h1>Get in <br>touch</h1>
         </div>
     </header>
 
-    <aside>
-        <nav class="social">
-            <ul>
-                <li>
-                    <a href="http://www.facebook.com">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.instagram.com">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.whatsapp.com">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <a href="#">info@email.com</a>
-        <p>123 - 456 - 7890</p>
-        <p>123 Queen Street West, Unit 10</p>
-        <p>Toronto, Ontario</p>
-        <p>M5V2D5</p>
-    </aside>
-
     <main>
-        <form action="" method="POST" name="contactUs">
+        <div class="wrapper mainFlex">
+            <aside class="contactInfo">
+                <nav class="social">
+                    <ul>
+                        <li>
+                            <a href="http://www.facebook.com">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.instagram.com">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.whatsapp.com">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#">info@email.com</a>
+                <p>123 - 456 - 7890</p>
+                <p>123 Queen Street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </aside>
 
-            <label for="name" class="visuallyHidden">Name</label>
-            <input type="text" class="name" id="name" name="name" placeholder="Name">
+            <form action="" method="POST" name="contactUs" class="contactUs">
+                <div class="inputs">
+                    <label for="name" class="visuallyHidden">Name</label>
+                    <input type="text" class="name" id="name" name="name" placeholder="Name">
 
-            <label for="email" class="visuallyHidden">Email address</label>
-            <input type="email" class="email" id="email" name="email" placeholder="Email address">
+                    <label for="email" class="visuallyHidden">Email address</label>
+                    <input type="email" class="email" id="email" name="email" placeholder="Email address">
+                </div>
 
-            <label for="message" class="visuallyHidden">Message</label>
-            <input type="textarea" class="message" id="message" name="message" placeholder="Message">
+                <label for="message" class="visuallyHidden">Message</label>
+                <textarea name="message" id="message" class="message" placeholder="Message" cols="" rows=""></textarea>
 
-            <button type="submit">Submit</button>
+                <button type="submit">Submit</button>
 
-        </form>
+            </form>
+        </div>
     </main>
     <footer>
         <p>Copyright © 2018 HackerYou</p>

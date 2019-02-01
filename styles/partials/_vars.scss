@@ -23,6 +23,9 @@ $headerFont: 'Josefin Sans', sans-serif;
 // Roboto: 400, 700
 $bodyFont: 'Roboto', sans-serif;
 
+// transition
+$transition: 0.15s ease-in-out;
+
 // MIXINS
 
 @mixin fontStyle($size, $color, $weight) {

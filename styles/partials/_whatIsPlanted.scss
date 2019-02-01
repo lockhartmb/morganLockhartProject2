@@ -1,6 +1,6 @@
 .whatIsPlanted {
     text-align: center;
-    padding: 150px;
+    padding: 150px 0;
 
     h2 {
         @include fontStyle(2.8rem, $primary, 700);

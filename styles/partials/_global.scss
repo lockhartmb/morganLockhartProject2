@@ -15,12 +15,15 @@ ul {
     margin: 0;
 }
 
-section {
+a {
+    text-decoration: none;
+}
+
+body {
     background-color: $background;
 }
 
 .button {
-    text-decoration: none;
     color: $secondary;
     background-color: $accent2;
     padding: 10px 20px;
@@ -30,5 +33,10 @@ section {
     @include fontStyle(1rem, $secondary, 700);
     line-height: 1.6rem;
     letter-spacing: 1px;
+    transition: transform $transition;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
