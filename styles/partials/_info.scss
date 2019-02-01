@@ -1,0 +1,48 @@
+.info {
+    
+    .infoContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 100px 0;
+    }
+    
+    .infoItem {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        min-width: 300px;
+        padding: 0 20px 60px 20px;
+    }
+
+    .infoItem:nth-child(3),
+    .infoItem:nth-child(4) {
+        padding-bottom: 0;
+    }
+    
+    .infoText {
+        padding-left: 20px;
+    }
+
+    .infoTitle {
+        position: relative;
+    }
+
+    i {
+        font-size: 1.5rem;
+        width: 40px;
+        text-align: center;
+        z-index: 99;
+    }
+
+    i::after {
+        content: '';
+        background-color: $accent1;
+        border-radius: 50%;
+        position: absolute;
+        top: -6px;
+        left: -9px;
+        width: 50px;
+        height: 50px;
+    }
+}

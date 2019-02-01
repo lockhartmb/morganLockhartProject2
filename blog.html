@@ -13,25 +13,103 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
     <header>
         <div class="wrapper">
-            <nav>
+            <nav class="main">
                 <ul>
-                    <li><a href="#">Planted</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Planted</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="blog.html" class="currentPage">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <h1>Blog</h1>
-            <div>
-                <img src="assets/headerBox.jpg" alt="dark green leaves">
-            </div>
         </div>
     </header>
-    <aside></aside>
-    <main></main>
+
+    <aside>
+        <div class="asideText">
+            <h3>About Planted</h3>
+            <p>Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <span>Find out
+                    more.</span></p>
+            <h3>Recent posts</h3>
+            <ul>
+                <li>Donec facilisis tortor ut</li>
+                <li>Augue lacinia at viverra</li>
+                <li>Semper sed sapien metus</li>
+                <li>Scelerisque nec pharetra id</li>
+            </ul>
+        </div>
+    </aside>
+
+    <main>
+
+        <!-- this is where the first blog post starts -->
+        <div class="blogPost">
+            <img src="assets/postImage.jpg" alt="close up view of some leaves against a beige wall">
+            <h2>Our mission at Planted</h2>
+            <p class="byline">Monday January 21st, 2019 by <span>Yousra</span></p>
+            <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar
+                lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam
+                tempus vel odio vitae aliquam.</p>
+            <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis
+                egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis
+                in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra
+                eleifend lacu.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet
+                neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet,
+                molestie justo at, auctor nunc. Plasellus ligula ipsum, volutpat eget semper id, viverra eget nibh.
+                Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula
+                rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis
+                dolor sapien, vei sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean
+                tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in
+                felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue
+                tristique risus.</p>
+            <p>Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec
+                erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+        </div>
+
+        <!-- this is the comments section -->
+        <div class="comments">
+            <h3>Comments:</h3>
+            <div class="comment1">
+                <img src="assets/commentImage1.jpg" alt="the face of commenter #1">
+                <div class="text">
+                    <h4>Tuesday October 9th, 2018 by Jeremy</h4>
+                    <p>Fusce vehicula dolor arcu, sit amet blandi dolor mollis nec. Donec viverra eleifend lacus, vitae
+                        ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod
+                        scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                </div>
+            </div>
+            <div class="comment2">
+                <img src="assets/commentImage2.jpg" alt="the face of commenter #2">
+                <div class="text">
+                    <h4>Wednesday October 10th, 2018 by Julia</h4>
+                    <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc
+                        sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet
+                        arcu.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- this is the post a comment form -->
+        <form action="" method="POST" name="postComment">
+
+            <label for="name" class="visuallyHidden">Name</label>
+            <input type="text" class="name" id="name" name="name" placeholder="Name">
+
+            <label for="email" class="visuallyHidden">Email address</label>
+            <input type="email" class="email" id="email" name="email" placeholder="Email address">
+
+            <label for="comment" class="visuallyHidden">Comment</label>
+            <input type="textarea" class="comment" id="comment" name="comment" placeholder="Comment">
+
+            <button type="submit">Post comment</button>
+
+        </form>
+    </main>
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>

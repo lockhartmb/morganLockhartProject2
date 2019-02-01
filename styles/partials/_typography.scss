@@ -1,0 +1,21 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $headerFont;
+    color: $primary;
+}
+
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: $bodyFont;
+    line-height: 1.6rem;
+    margin: 0;
+    padding: 0;
+}

@@ -1,10 +1,32 @@
 // VARIABLES
 
+// off-white: 
 $background: #f0efed;
+
+// black:
 $primary: #2c2c2c;
-$secondary: #074115;
+
+// white:
+$secondary: white;
+
+// forest green:
+$tertiary: #074115;
+
+// sunny yellow:
 $accent1: #f8e71c;
+
+// green:
 $accent2: #0e902d;
+
+// Josefin: 300, 400, 700
+$headerFont: 'Josefin Sans', sans-serif;
+// Roboto: 400, 700
+$bodyFont: 'Roboto', sans-serif;
 
 // MIXINS
 
+@mixin fontStyle($size, $color, $weight) {
+  font-size: $size;
+  color: $color;
+  font-family: $weight;
+}

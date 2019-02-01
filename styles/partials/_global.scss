@@ -1,8 +1,34 @@
-html {
-    font-size: 125%;
-}
-
 img {
     width: 100%;
     display: block;
 }
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    background-color: $background;
+}
+
+.button {
+    text-decoration: none;
+    color: $secondary;
+    background-color: $accent2;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 25px 0;
+    @include fontStyle(1rem, $secondary, 700);
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+}
+

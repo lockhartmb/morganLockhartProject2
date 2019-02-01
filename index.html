@@ -13,100 +13,141 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
     <header>
-        <div class="wrapper">
-            <!-- <p>Planted</p> ask about what kind of element this should be -->
-            <nav>
+
+        <div class="wrapper headerFlex">
+            <nav class="main">
+                <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
                 <ul>
-                    <li><a href="#">Planted</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Planted</a></li>
+                    <li><a href="index.html" class="currentPage">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Planted invitation</h1>
-            <div>
+
+            <h1>Planted <span>invitation</span></h1>
+
+            <div class="heroOverlay">
                 <img src="assets/headerBox.jpg" alt="dark green leaves">
             </div>
+
         </div>
     </header>
 
     <main>
         <!-- this is the What is planted? section -->
-        <section>
+        <section class="whatIsPlanted">
             <div class="wrapper">
-                <h2>What is planted?</h2>
+                <h2>What is Planted?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing leit. In et risus nec orci ornare condimentum.
-                    Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at,
+                    Nam suscipit odio lorem id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at,
                     consectetur vel turpis. Vestibulum ultricies, felix in lacinia porttitor, tortor metus convallis
                     augue, at fermentum diam erat nec quam. Nulla facilisi.</p>
                 <a href="#" class="button">Find out more</a>
             </div>
         </section>
 
-        <!-- this is the links section -->
-        <section class="links">
-            <div class="image">
-                <img src="assets/leftFlowers.jpg" alt="a beautiful bouquet of flowers">
-            </div>
-            <div class="text">
-                <h2>Upcoming workshops</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum.
-                    Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at,
-                    consectetur vel turpis.</p>
-                <a href="#" class="button">Read more</a>
-            </div>
-            <div class="image">
-                <img src="assets/rightFlowers.jpg" alt="closeup of some leafy bunches of small green flowers in a garden">
-            </div>
-            <div class="text">
-                <h2>Unique plants to discover</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum.
-                    Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at,
-                    consectetur vel turpis.</p>
-                <a href="#" class="button">Read more</a>
+        <!-- this is the workshops section -->
+        <section class="workshops">
+            <div class="wrapper sectionFlex">
+                <div class="image image1">
+                    <img src="assets/leftFlowers.jpg" alt="a beautiful bouquet of flowers">
+                </div>
+                <div class="text text1">
+                    <h2>Upcoming workshops</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
+                        condimentum.
+                        Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis
+                        at,
+                        consectetur vel turpis.</p>
+                    <a href="#" class="button">Read more</a>
+                </div>
+                <div class="image image2">
+                    <img src="assets/rightFlowers.jpg" alt="closeup of some leafy bunches of small green flowers in a garden">
+                </div>
+                <div class="text text2">
+                    <h2>Unique plants to discover</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
+                        condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor
+                        nec iaculis at, consectetur vel turpis.</p>
+                    <a href="#" class="button">Read more</a>
+                </div>
             </div>
         </section>
 
         <!-- this is the info section -->
         <section class="info">
-            <div class="top wrapper">
-                <div class="info1">
-                    <h2>Greenhouses</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
-                        mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+            <div class="infoContainer wrapper">
+
+                <div class="infoItem info1">
+                    <div class="infoTitle">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="infoText">
+                        <h2>Greenhouses</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                            mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
                 </div>
-                <div class="info2">
-                    <h2>Community</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
-                        mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+
+                <div class="infoItem info2">
+                    <div class="infoTitle">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="infoText">
+                        <h2>Community</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                            mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
                 </div>
-                <div class="info3">
-                    <h2>Blog</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
-                        mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+
+                <div class="infoItem info3">
+                    <div class="infoTitle">
+                        <i class="fas fa-file"></i>
+                    </div>
+                    <div class="infoText">
+                        <h2>Blog</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                            mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
                 </div>
-                <div class="info4">
-                    <h2>Get in touch</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
-                        mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+
+                <div class="infoItem info4">
+                    <div class="infoTitle">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="infoText">
+                        <h2>Get in touch</h2>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis
+                            mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
                 </div>
             </div>
-            <div class="banner"></div>
+
+            <div class="banner">
+                <img src="assets/bannerVases.jpg" alt="two white vases and a white tea pot on a white window sill overlooking a lawn">
+            </div>
         </section>
 
         <!-- this is the Planted's founder section -->
-        <section class="founder">
-            <img src="assets/founder.jpg" alt="the founder of Planted standing in an outdoor garden">
-            <div class="founderInfo">
-                <h2>Planted's founder</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nullar elementum
-                    eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis
-                    convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra
-                    luctus. Quisque interdum orci quis convallis.</p>
-                <a href="#" class="button">Find out more</a>
+        <section class="founder" id="about">
+            <div class="wrapper sectionFlex">
+                <div class="image">
+                    <img src="assets/founder.jpg" alt="the founder of Planted standing in an outdoor garden">
+                </div>
+                <div class="founderInfo">
+                    <h2>Planted's founder</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nullar elementum
+                        eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis
+                        convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.
+                        Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra
+                        luctus. Quisque interdum orci quis convallis.</p>
+                    <a href="#" class="button">Find out more</a>
+                </div>
             </div>
         </section>
 

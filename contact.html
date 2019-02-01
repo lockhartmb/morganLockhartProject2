@@ -13,25 +13,70 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
     <header>
         <div class="wrapper">
-            <nav>
+            <nav class="main">
                 <ul>
-                    <li><a href="#">Planted</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Planted</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="currentPage">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Blog</h1>
-            <div>
-                <img src="assets/headerBox.jpg" alt="dark green leaves">
-            </div>
+            <h1>Get in touch</h1>
         </div>
     </header>
-    <aside></aside>
-    <main></main>
+
+    <aside>
+        <nav class="social">
+            <ul>
+                <li>
+                    <a href="http://www.facebook.com">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.instagram.com">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.whatsapp.com">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#">info@email.com</a>
+        <p>123 - 456 - 7890</p>
+        <p>123 Queen Street West, Unit 10</p>
+        <p>Toronto, Ontario</p>
+        <p>M5V2D5</p>
+    </aside>
+
+    <main>
+        <form action="" method="POST" name="contactUs">
+
+            <label for="name" class="visuallyHidden">Name</label>
+            <input type="text" class="name" id="name" name="name" placeholder="Name">
+
+            <label for="email" class="visuallyHidden">Email address</label>
+            <input type="email" class="email" id="email" name="email" placeholder="Email address">
+
+            <label for="message" class="visuallyHidden">Message</label>
+            <input type="textarea" class="message" id="message" name="message" placeholder="Message">
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </main>
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>

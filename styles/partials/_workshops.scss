@@ -1,0 +1,54 @@
+.workshops {
+    background-color: $secondary;
+    position: relative;
+
+    .sectionFlex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .image {
+        position: absolute;
+    }
+    
+    .sectionFlex::before {
+        content: '';
+        display: block;
+        flex-basis: 50%;
+    }
+
+    .text {
+        width: 45%;
+        padding: 80px 0;
+        z-index: 99;
+    }
+    
+    .image1 {
+        top: -30px;
+        left: 0;
+    }
+
+    .image2 {
+        order: 2;
+        bottom: -30px;
+        right: 0;
+    }
+    
+    .text2 {
+        text-align: right;
+    }
+    
+    .image1 img {
+        box-shadow: 25px 25px 0 0 $accent1;
+    }
+    
+    .image2 img {
+        box-shadow: -25px 25px 0 0 $accent1;
+    }
+
+    h2 {
+        @include fontStyle(1.6rem, $primary, 700);
+        letter-spacing: 1px;
+    }
+}

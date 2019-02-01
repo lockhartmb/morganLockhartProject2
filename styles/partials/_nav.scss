@@ -1,0 +1,61 @@
+.main {
+    // width: 50%;
+    padding: 20px 0;
+    @include fontStyle(1rem, $secondary, 400);
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    li:first-child {
+        font-size: 2rem;
+        color: $secondary;
+    }
+
+    li:not(:first-child) {
+        text-transform: uppercase;
+    }
+
+    a {
+        text-decoration: none;
+        color: $secondary;
+        padding: 0 15px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .currentPage {
+        color: $accent1;
+    }
+
+    @media (max-width: 750px) {
+        ul {
+            flex-direction: column;
+            text-align: left;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        a {
+            padding: 10px;
+            display: inline-block;
+        }
+    }
+
+    @media (max-width: 500px) {
+        ul {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            color: $secondary;
+            font-size: 2rem;
+        }
+    }
+}
