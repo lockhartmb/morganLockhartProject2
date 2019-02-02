@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* This setup snippet came from the notes provided */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -279,7 +280,8 @@ p {
 
 header {
   height: 85vh;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
   header .headerFlex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -319,6 +321,18 @@ header {
     text-transform: capitalize;
     padding-bottom: 20px; }
   .contact .headerFlex {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+
+.blog {
+  background-image: url(../assets/blogHero.jpg); }
+  .blog h1 {
+    font-size: 4rem;
+    color: #f8e71c;
+    font-family: 700;
+    padding-bottom: 20px; }
+  .blog .headerFlex {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
@@ -476,6 +490,99 @@ header {
   .gallery .galleryItem:last-child {
     margin-right: 0; }
 
+.blogPage {
+  position: relative; }
+  .blogPage .mainFlex {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .blogPage span {
+    font-weight: 700;
+    font-style: italic;
+    color: #074115; }
+  .blogPage aside::before {
+    content: '';
+    display: block;
+    height: 330px; }
+  .blogPage aside {
+    background-color: white;
+    padding: 20px;
+    margin-top: 80px;
+    position: relative; }
+    .blogPage aside .imgContainer {
+      position: absolute;
+      top: -10px;
+      right: 10px;
+      width: 140%; }
+    .blogPage aside img {
+      max-height: 365px; }
+  .blogPage h3 {
+    font-size: 1.6rem;
+    color: #2c2c2c;
+    font-family: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize; }
+  .blogPage li {
+    padding-left: 8px;
+    line-height: 1.6rem; }
+  .blogPage li::before {
+    content: "•";
+    padding-right: 15px;
+    color: #0e902d; }
+  .blogPage .blogContent {
+    width: 65%; }
+    .blogPage .blogContent .imgContainer {
+      -webkit-box-shadow: -25px 25px 0 -10px #f8e71c;
+      box-shadow: -25px 25px 0 -10px #f8e71c;
+      position: absolute;
+      top: -150px; }
+  .blogPage .blogPost::before {
+    content: '';
+    display: block;
+    height: 400px; }
+  .blogPage .blogText {
+    border-left: 6px solid #f8e71c;
+    border-bottom: 6px solid #f8e71c;
+    padding: 80px 30px 30px 30px; }
+  .blogPage h2 {
+    font-size: 2.15rem;
+    color: #2c2c2c;
+    font-family: 700; }
+  .blogPage .byline {
+    font-style: italic;
+    padding-bottom: 2.5rem;
+    color: #074115; }
+  .blogPage p {
+    padding-bottom: 0.9rem; }
+  .blogPage .postComment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .blogPage .postComment img {
+      width: 10%;
+      height: 100%;
+      padding-top: 0.3rem;
+      /* this is to account for the line-height of the h4 next to it so if the font size of the h4 changes, so will the padding */ }
+    .blogPage .postComment .text {
+      width: 85%;
+      padding-left: 20px;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; }
+    .blogPage .postComment h4 {
+      font-size: 1rem;
+      color: #074115;
+      font-family: 700;
+      line-height: 1.6rem;
+      padding: 0;
+      margin: 0; }
+  .blogPage .submitComment {
+    padding: 60px 0 80px 0; }
+    .blogPage .submitComment input, .blogPage .submitComment textarea {
+      background-color: #f0efed; }
+    .blogPage .submitComment button {
+      text-transform: capitalize; }
+
 .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,7 +623,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .mainFlex .contactInfo {
+  .mainFlex aside {
     width: 30%; }
   .mainFlex .contactInfo > a {
     font-size: 1.25rem;
@@ -524,7 +631,7 @@ header {
     font-family: 700;
     line-height: 3rem; }
   .mainFlex .contactUs {
-    width: 68%;
+    width: 65%;
     background: white;
     padding: 50px;
     -webkit-box-shadow: -25px 25px 0 -10px #f8e71c;
@@ -550,12 +657,14 @@ header {
     font-family: 300; }
   .mainFlex .name {
     margin-right: 10px; }
-  .mainFlex .message {
+  .mainFlex .message,
+  .mainFlex .comment {
     border: 2px solid #0e902d;
     width: 100%;
     padding: 20px;
+    padding-top: 30px;
     height: 200px;
-    margin: 10px 0; }
+    margin: 30px 0; }
   .mainFlex button {
     font-size: 1rem;
     color: white;
