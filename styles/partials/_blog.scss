@@ -14,7 +14,7 @@
     aside::before {
         content: '';
         display: block;
-        height: 330px;
+        padding-top: 120%;
     }
 
     aside {
@@ -65,7 +65,7 @@
     .blogPost::before {
         content: '';
         display: block;
-        height: 400px;
+        padding-top: 55%;
     }
 
     .blogText {
@@ -86,6 +86,10 @@
 
     p {
         padding-bottom: 0.9rem;
+    }
+
+    .comments {
+        padding-left: 36px;
     }
 
     .postComment {
@@ -123,6 +127,48 @@
             text-transform: capitalize;
         }
     }
+}
 
+@media (max-width: 1150px) {
+    .blogPage {
 
+        .blogContent {
+            width: 100%;
+            
+            .imgContainer {
+                position: static;
+            }
+        }
+
+        .blogPost::before {
+            display: none;
+        }
+        
+        .postComment {
+            flex-direction: column;
+    
+            img {
+                width: 30%;
+                padding-bottom: 20px;
+            }
+    
+            .text {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .blogPage {
+
+        .blogText {
+            border: none;
+            padding: 80px 0 0 0;
+        }
+
+        .comments {
+            padding: 0;
+        }
+    }
 }

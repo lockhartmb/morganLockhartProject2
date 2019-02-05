@@ -16,17 +16,21 @@
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
     <header class="blog">
-        <div class="wrapper headerFlex">
-            <nav class="main">
-                <ul>
-                    <li><a href="index.html">Planted</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="blog.html" class="currentPage">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+        <div class="headerFlex">
+            <nav class="mainNav blogNav">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="index.html">Planted</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="blog.html" class="currentPage">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
-            <h1>Blog</h1>
+            <div class="wrapper">
+                <h1>Blog</h1>
+            </div>
         </div>
     </header>
 
@@ -41,9 +45,7 @@
 
                 <div class="asideText">
                     <h3>About Planted</h3>
-                    <p>Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <span>Find
-                            out
-                            more.</span></p>
+                    <p>Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="index.html#about"><span>Find out more.</span></a></p>
                     <h3>Recent posts</h3>
                     <ul>
                         <li>Donec facilisis tortor ut</li>
@@ -140,7 +142,8 @@
                     </div>
 
                     <label for="comment" class="visuallyHidden">Comment</label>
-                    <textarea name="comment" id="comment" class="comment" placeholder="Comment" cols="" rows="" required></textarea>
+                    <textarea name="comment" id="comment" class="comment" placeholder="Comment" cols="" rows=""
+                        required></textarea>
                     <button type="submit">Post comment</button>
 
                 </form>

@@ -29,7 +29,7 @@ body {
     padding: 10px 20px;
     text-transform: capitalize;
     display: inline-block;
-    margin: 25px 0;
+    margin-top: 25px;
     @include fontStyle(1rem, $secondary, 700);
     line-height: 1.6rem;
     letter-spacing: 1px;
@@ -40,3 +40,113 @@ body {
     }
 }
 
+/* These skip link styles came from the notes, not my head*/
+.skipLink { 
+    position: absolute;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: $secondary;
+    color: $primary;
+}
+
+.skipLink:focus {
+  left: 50vw;
+}
+
+/* These styles are common to both the Get In Touch and Blog pages */
+
+.mainFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    aside {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .mainFlex {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 80px 0;
+        
+        aside {
+            order: 2;
+            width: 100%;
+            text-align: center;
+            padding-top: 60px;
+        }
+    }
+
+}
+
+
+// These are the forms styles
+
+.mainFlex {
+
+    .inputs {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .name,
+    .email {
+        border: none;
+        padding: 20px;
+        border-bottom: 2px solid $accent2;
+        width: calc((100% - 10px) / 2);
+        @include fontStyle(1rem, $primary, 300);
+    }
+    
+    .name {
+        margin-right: 10px;
+    }
+
+    .message, 
+    .comment {
+        border: 2px solid $accent2;
+        width: 100%;
+        padding: 20px;
+        padding-top: 30px;
+        height: 200px;
+        margin: 30px 0;
+    }
+
+    button {
+        @include fontStyle(1rem, $secondary, 700);
+        color: $secondary;
+        border: none;
+        background-color: $accent2;
+        padding: 10px 20px;
+        line-height: 1.6rem;
+        letter-spacing: 1px;
+        width: 100%;
+        transition: background-color $transition;
+
+        &:hover {
+            background-color: $tertiary;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .mainFlex {
+
+        .inputs {
+            flex-direction: column;
+        }
+
+        .name,
+        .email {
+            width: 100%;
+        }        
+    }
+}

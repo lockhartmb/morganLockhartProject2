@@ -4,27 +4,26 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 100px 0;
+        padding-top: 100px;
     }
     
     .infoItem {
         display: flex;
         flex-direction: row;
         width: 50%;
-        min-width: 300px;
         padding: 0 20px 60px 20px;
     }
 
     .infoItem:nth-child(3),
     .infoItem:nth-child(4) {
-        padding-bottom: 0;
+        // padding-bottom: 0;
     }
     
     .infoText {
         padding-left: 20px;
     }
 
-    .infoTitle {
+    .infoIcon {
         position: relative;
     }
 
@@ -44,5 +43,35 @@
         width: 50px;
         height: 50px;
         z-index: -9;
+    }
+}
+
+@media (max-width: 750px) {
+    .info {
+
+        .infoContainer {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+        }
+
+        .infoItem {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .infoIcon {
+            padding-bottom: 12px;
+        }
+
+        i::after {
+            top: -10px;
+            left: calc(50% - 25px);
+        }
+
+        .infoText {
+            padding-left: 0;
+        }
     }
 }

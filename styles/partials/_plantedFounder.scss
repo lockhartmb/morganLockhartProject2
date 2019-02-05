@@ -1,6 +1,10 @@
 .founder {
     padding: 80px 0;
 
+    .image {
+        width: 30%;
+    }
+
     .image img {
         box-shadow: 15px 15px 0 0 $accent1;
     }
@@ -13,10 +17,33 @@
 
     .founderInfo {
         width: 60%;
+        flex-grow: 1;
+        padding-left: 10%;
 
         h2 {
             @include fontStyle(2.1rem, $primary, 700);
             letter-spacing: 1px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .founder {
+        
+        .sectionFlex {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .image {
+            width: 60%;
+        }
+
+        .founderInfo {
+            width: 100%;
+            padding: 60px 0 0 0;
+            text-align: center;
         }
     }
 }

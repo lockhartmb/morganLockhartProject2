@@ -1,65 +1,74 @@
-.main {
-    // width: 50%;
-    padding: 20px 0;
+.mainNav {
+    padding: 15px 0;
     @include fontStyle(1rem, $secondary, 400);
+    z-index: 99;
 
     ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-    }
-
-    li:first-child {
-        font-size: 2rem;
-        color: $secondary;
-    }
-
-    li:not(:first-child) {
-        text-transform: uppercase;
-    }
-
-    a {
-        color: $secondary;
-        padding: 0 15px;
-        transition: color $transition;
-
-        &:hover {
-            color: $accent1;
+        
+        li:first-child {
+            font-size: 2rem;
+            color: $secondary;
         }
-    }
-
-    .hamburger {
-        display: none;
+    
+        li:not(:first-child) {
+            text-transform: uppercase;
+        }
+    
+        a {
+            color: $secondary;
+            // padding-right: 30px;
+            transition: color $transition;
+            display: inline-block;
+            padding: 12px 30px 0px 0;
+    
+            &:hover {
+                color: $accent1;
+            }
+        }
     }
 
     .currentPage {
         color: $accent1;
     }
+}
 
-    @media (max-width: 750px) {
+.hamburger {
+    display: none;
+}
+
+.contactNav, 
+.blogNav {
+    background-color: $primary;
+}
+
+@media (max-width: 750px) {
+
+    .mainNav {
+        
         ul {
             flex-direction: column;
-            text-align: left;
             justify-content: flex-start;
             align-items: flex-start;
-        }
-
-        a {
-            padding: 10px;
-            display: inline-block;
+            
+            li:first-child {
+                font-size: 1.7rem;
+            }
         }
     }
 
-    @media (max-width: 500px) {
-        ul {
-            display: none;
-        }
+    .blogNav,
+    .contactNav {
+        background-color: transparent;
 
-        .hamburger {
-            display: block;
-            color: $secondary;
-            font-size: 2rem;
+        ul {
+            background-color: $primary;
+            width: 30%;
+            min-width: 150px;
+            padding: 20px;
         }
     }
 }
