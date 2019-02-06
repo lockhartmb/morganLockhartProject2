@@ -9,16 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/favicon16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
+    <!-- This is the header/hero section of the home page -->
     <header class="home">
+        <div class="wrapper heroContainer">
 
-        <div class="wrapper headerFlex">
-            <p class="hamburger"><i class="fas fa-bars"></i></p>
             <nav class="mainNav">
                 <ul>
                     <li><a href="index.html">Planted</a></li>
@@ -32,31 +33,40 @@
             <h1>Planted <span>invitation</span></h1>
 
             <div class="heroOverlay">
-                <img src="assets/headerBox.jpg" alt="dark green leaves">
+                <img src="assets/headerBox.jpg" alt="dark green leaves with light green veins">
             </div>
 
         </div>
     </header>
 
+    <!-- This main element contains everything that falls between the header and the footer -->
     <main id="mainContent">
-        <!-- this is the What is planted? section -->
+
+        <!-- This is the What is Planted? section -->
         <section class="whatIsPlanted">
+
             <div class="wrapper">
+
                 <h2>What is Planted?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing leit. In et risus nec orci ornare condimentum.
                     Nam suscipit odio lorem id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at,
                     consectetur vel turpis. Vestibulum ultricies, felix in lacinia porttitor, tortor metus convallis
                     augue, at fermentum diam erat nec quam. Nulla facilisi.</p>
                 <a href="#" class="button">Find out more</a>
-            </div>
+
+            </div> <!-- This is the closing of the wrapper div -->
+
         </section>
 
-        <!-- this is the workshops section -->
+        <!-- This is the Upcoming Workshops section -->
         <section class="workshops">
-            <div class="wrapper sectionFlex">
+
+            <div class="wrapper">
+
                 <div class="image image1">
-                    <img src="assets/leftFlowers.jpg" alt="a beautiful bouquet of flowers">
+                    <img src="assets/flowerBouquet.jpg" alt="a beautiful bouquet of flowers">
                 </div>
+
                 <div class="text text1">
                     <h2>Upcoming workshops</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
@@ -66,9 +76,12 @@
                         consectetur vel turpis.</p>
                     <a href="#" class="button">Read more</a>
                 </div>
-                <div class="image image2">
-                    <img src="assets/rightFlowers.jpg" alt="closeup of some leafy bunches of small green flowers in a garden">
+
+                <!-- The order of .image2 and .text2 are altered for desktop to create the alternating pattern seen in the design -->
+                <div class="image image2"> 
+                    <img src="assets/greenHydrangea.jpg" alt="closeup of some green hydrangeas">
                 </div>
+
                 <div class="text text2">
                     <h2>Unique plants to discover</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare
@@ -76,14 +89,17 @@
                         nec iaculis at, consectetur vel turpis.</p>
                     <a href="#" class="button">Read more</a>
                 </div>
-            </div>
+
+            </div> <!-- This is the closing of the wrapper div -->
+
         </section>
 
-        <!-- this is the info section -->
+        <!-- This is the section containing Information about Greenhouses, Community, the Blog, and Get in Touch. It also contains the banner image directly below it -->
         <section class="info">
+
             <div class="infoContainer wrapper">
 
-                <div class="infoItem info1">
+                <div class="infoItem">
                     <div class="infoIcon">
                         <i class="fas fa-leaf"></i>
                     </div>
@@ -94,7 +110,7 @@
                     </div>
                 </div>
 
-                <div class="infoItem info2">
+                <div class="infoItem">
                     <div class="infoIcon">
                         <i class="fas fa-users"></i>
                     </div>
@@ -105,7 +121,7 @@
                     </div>
                 </div>
 
-                <div class="infoItem info3">
+                <div class="infoItem">
                     <div class="infoIcon">
                         <i class="fas fa-file"></i>
                     </div>
@@ -116,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="infoItem info4">
+                <div class="infoItem">
                     <div class="infoIcon">
                         <i class="fas fa-phone"></i>
                     </div>
@@ -126,19 +142,23 @@
                             mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                     </div>
                 </div>
-            </div>
+            </div> <!-- This is the closing of the .infoContainer/wrapper div. The banner image comes immediately after, outside of the wrapper -->
 
-            <div class="banner">
+            <div>
                 <img src="assets/bannerVases.jpg" alt="two white vases and a white tea pot on a white window sill overlooking a lawn">
             </div>
+
         </section>
 
-        <!-- this is the Planted's founder section -->
+        <!-- This is the Planted's founder section -->
         <section class="founder" id="about">
-            <div class="wrapper sectionFlex">
+
+            <div class="wrapper">
+
                 <div class="image">
                     <img src="assets/founder.jpg" alt="the founder of Planted standing in an outdoor garden">
                 </div>
+
                 <div class="founderInfo">
                     <h2>Planted's founder</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nullar elementum
@@ -149,27 +169,38 @@
                         luctus. Quisque interdum orci quis convallis.</p>
                     <a href="#" class="button">Find out more</a>
                 </div>
-            </div>
+
+            </div> <!-- This is the closing of the wrapper div -->
+
         </section>
 
-        <!-- this is the gallery section -->
+        <!-- This is the Gallery section -->
         <section class="gallery">
+
             <div class="wrapper">
+
                 <div class="galleryItem">
                     <img src="assets/greenhouse.jpg" alt="view of the inside of a greenhouse with tropical palm trees">
                 </div>
+
                 <div class="galleryItem">
                     <img src="assets/succulents.jpg" alt="aerial view of many small succulents on a white table">
                 </div>
+
                 <div class="galleryItem">
                     <img src="assets/cactaiSucculents.jpg" alt="many cactuses succulents in small pots near a window">
                 </div>
-            </div>
+
+            </div> <!-- This is the closing of the wrapper div -->
+
         </section>
+
     </main>
+
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+
 </body>
 
 </html>

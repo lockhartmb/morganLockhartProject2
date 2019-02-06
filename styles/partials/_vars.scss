@@ -31,5 +31,20 @@ $transition: 0.15s ease-in-out;
 @mixin fontStyle($size, $color, $weight) {
   font-size: $size;
   color: $color;
-  font-family: $weight;
+  font-weight: $weight;
 }
+
+// ANIMATION
+// informed by https://daneden.github.io/animate.css/
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+$fade: fade 1.75s linear;

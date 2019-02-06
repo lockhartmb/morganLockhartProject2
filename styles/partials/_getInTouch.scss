@@ -22,7 +22,8 @@
 
 .contactInfo > a {
     @include fontStyle(1.25rem, $primary, 700);
-    line-height: 3rem;
+    padding: 15px 0;
+    display: inline-block;
 }
 
 .contactUs {

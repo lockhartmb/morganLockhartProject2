@@ -9,16 +9,15 @@
         box-shadow: 15px 15px 0 0 $accent1;
     }
 
-    .sectionFlex {
+    .wrapper {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
 
     .founderInfo {
         width: 60%;
         flex-grow: 1;
-        padding-left: 10%;
+        padding-left: 80px;
 
         h2 {
             @include fontStyle(2.1rem, $primary, 700);
@@ -30,7 +29,7 @@
 @media (max-width: 850px) {
     .founder {
         
-        .sectionFlex {
+        .wrapper {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;

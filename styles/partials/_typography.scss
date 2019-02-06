@@ -15,7 +15,10 @@ h1, h2 {
 
 p {
     font-family: $bodyFont;
+    @include fontStyle(1rem, $primary, 400);
     line-height: 1.6rem;
     margin: 0;
     padding: 0;
 }
+
+// All custom styles can be found in the partial for that particular section

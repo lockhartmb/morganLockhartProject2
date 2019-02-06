@@ -3,7 +3,7 @@ header {
     background-size: cover; 
     background-position: center center;
     
-    .headerFlex {
+    .heroContainer {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -23,11 +23,11 @@ header {
 
     h1 {
         @include fontStyle(8.3rem, $secondary, 400);
-        display: inline-block;
         z-index: 99;
         margin: auto;
         line-height: 146px;
         padding-left: 20%;
+        animation: $fade;
 
         span {
             color: $accent1;
@@ -44,7 +44,7 @@ header {
         padding-bottom: 20px;
     }
     
-    .headerFlex {
+    .heroContainer {
         justify-content: space-between;
     }
 }
@@ -57,7 +57,7 @@ header {
         padding-bottom: 20px;
     }
 
-    .headerFlex {
+    .heroContainer {
         justify-content: space-between;
     }
 }

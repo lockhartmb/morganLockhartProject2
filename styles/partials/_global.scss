@@ -9,6 +9,12 @@ img {
     margin: 0 auto;
 }
 
+@media (max-width: 575px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -26,6 +32,7 @@ body {
 .button {
     color: $secondary;
     background-color: $accent2;
+    border: 2px solid transparent;
     padding: 10px 20px;
     text-transform: capitalize;
     display: inline-block;
@@ -37,6 +44,10 @@ body {
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    &:focus {
+        border: 2px dotted $secondary;
     }
 }
 
@@ -54,12 +65,15 @@ body {
 }
 
 .skipLink:focus {
-  left: 50vw;
+  right: 15px;
+  left: auto;
+  top: 15px;
 }
 
-/* These styles are common to both the Get In Touch and Blog pages */
+// These styles are common to both the Get In Touch and Blog pages
 
-.mainFlex {
+.blogPage,
+.contactPage {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,7 +85,8 @@ body {
 }
 
 @media (max-width: 1150px) {
-    .mainFlex {
+    .blogPage,
+    .contactPage {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -84,69 +99,80 @@ body {
             padding-top: 60px;
         }
     }
-
 }
-
 
 // These are the forms styles
 
-.mainFlex {
+.inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+.name,
+.email {
+    padding: 20px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid $accent2;
+    width: calc((100% - 10px) / 2);
+    @include fontStyle(1rem, $primary, 300);
+    line-height: 1.6rem;
+}
+
+.name {
+    margin-right: 10px;
+}
+
+.message, 
+.comment {
+    border: 2px solid $accent2;
+    width: 100%;
+    padding: 20px;
+    padding-top: 30px;
+    height: 200px;
+    margin: 30px 0;
+}
+
+.name:focus,
+.email:focus,
+.message:focus,
+.comment:focus {
+    border: 2px dotted $accent2; 
+}
+
+button {
+    @include fontStyle(1rem, $secondary, 700);
+    color: $secondary;
+    border: none;
+    background-color: $accent2;
+    border: 2px solid transparent;
+    padding: 10px 20px;
+    line-height: 1.6rem;
+    letter-spacing: 1px;
+    width: 100%;
+    transition: transform $transition;
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+    
+    &:focus {
+        border: 2px dotted $secondary;
+    }
+}
+
+
+@media (max-width: 850px) {
 
     .inputs {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .name,
     .email {
-        border: none;
-        padding: 20px;
-        border-bottom: 2px solid $accent2;
-        width: calc((100% - 10px) / 2);
-        @include fontStyle(1rem, $primary, 300);
+        width: 100%;
     }
-    
+
     .name {
-        margin-right: 10px;
-    }
-
-    .message, 
-    .comment {
-        border: 2px solid $accent2;
-        width: 100%;
-        padding: 20px;
-        padding-top: 30px;
-        height: 200px;
-        margin: 30px 0;
-    }
-
-    button {
-        @include fontStyle(1rem, $secondary, 700);
-        color: $secondary;
-        border: none;
-        background-color: $accent2;
-        padding: 10px 20px;
-        line-height: 1.6rem;
-        letter-spacing: 1px;
-        width: 100%;
-        transition: background-color $transition;
-
-        &:hover {
-            background-color: $tertiary;
-        }
-    }
-}
-
-@media (max-width: 850px) {
-    .mainFlex {
-
-        .inputs {
-            flex-direction: column;
-        }
-
-        .name,
-        .email {
-            width: 100%;
-        }        
+        margin-bottom: 10px;
     }
 }

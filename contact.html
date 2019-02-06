@@ -5,89 +5,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Planted</title>
+    <title>PLANTED</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
         crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/favicon16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
+    <!-- This is the header/hero section of the Contact/Get In Touch page-->
     <header class="contact">
-        <div class="headerFlex">
+
+        <div class="heroContainer">
+
             <nav class="mainNav contactNav">
-                <div class="wrapper">
+                <div class="wrapper"> <!-- The wrapper is nested inside the nav so that the background color of the nav can span the full width of the page -->
                     <ul>
-                        <li><a href="index.html">Planted</a></li>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html" class="currentPage">Contact</a></li>
+                        <li>
+                            <a href="index.html">Planted</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about">About</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="currentPage">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
+
             <div class="wrapper">
                 <h1>Get in <br>touch</h1>
             </div>
-        </div>
+
+        </div> <!-- This is the closing of the .heroContainer div -->
+
     </header>
 
-    <main>
-        <div class="wrapper mainFlex">
-            <aside class="contactInfo">
-                <nav class="social">
-                    <ul>
-                        <li>
-                            <a href="http://www.facebook.com">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.instagram.com">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.twitter.com">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.whatsapp.com">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#">info@email.com</a>
-                <p>123 - 456 - 7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </aside>
+    <!-- This main element contains the contactInfo aside and the contactUs form, and is styled with the wrapper class -->
+    <main class="wrapper contactPage" id="mainContent">
 
-            <form action="" method="POST" name="contactUs" class="contactUs">
-                <div class="inputs">
-                    <label for="name" class="visuallyHidden">Name</label>
-                    <input type="text" class="name" id="name" name="name" placeholder="Name">
+        <aside class="contactInfo"> <!-- The aside contains the social media icons, the email address, phone number, and address -->
+            <nav class="social">
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="visuallyHidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com">
+                            <i class="fab fa-instagram"></i>
+                            <span class="visuallyHidden">Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.twitter.com">
+                            <i class="fab fa-twitter"></i>
+                            <span class="visuallyHidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.whatsapp.com">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="visuallyHidden">WhatsApp</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
-                    <label for="email" class="visuallyHidden">Email address</label>
-                    <input type="email" class="email" id="email" name="email" placeholder="Email address">
-                </div>
+            <a href="#">info@email.com</a>
 
-                <label for="message" class="visuallyHidden">Message</label>
-                <textarea name="message" id="message" class="message" placeholder="Message" cols="" rows="" required></textarea>
+            <p>123 - 456 - 7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2D5</p>
+        </aside>
 
-                <button type="submit">Submit</button>
+        <!-- This is the contactUs form, and styles can be found in the _global partial as they are shared with the Blog page -->
+        <form action="" method="POST" name="contactUs" class="contactUs"> 
+            <div class="inputs">
+                <label for="name" class="visuallyHidden">Name</label>
+                <input type="text" class="name" id="name" name="name" placeholder="Name">
 
-            </form>
-        </div>
+                <label for="email" class="visuallyHidden">Email address</label>
+                <input type="email" class="email" id="email" name="email" placeholder="Email address">
+            </div>
+
+            <label for="message" class="visuallyHidden">Message</label>
+            <textarea name="message" id="message" class="message" placeholder="Message" cols="" rows="" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
     </main>
+
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+    
 </body>
 
 </html>

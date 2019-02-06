@@ -12,9 +12,8 @@
     .galleryItem {
         width: calc((100% - 30px) / 3);
         margin-right: 15px;
-        margin-bottom: 15px;
     }
-
+    
     .galleryItem:last-child {
         margin-right: 0;
     }
@@ -22,13 +21,18 @@
 
 @media (max-width: 850px) {
     .gallery {
-
+        
         .galleryItem {
             width: calc((100% - 15px) / 2);
+        }
+        
+        .galleryItem:nth-child(1) {
+            margin-bottom: 15px;
         }
 
         .galleryItem:nth-child(2) {
             margin-right: 0;
+            margin-bottom: 15px;
         }
     }
 }
@@ -40,6 +44,5 @@
             width: 100%;
             margin-right: 0;
         }
-
     }
 }
