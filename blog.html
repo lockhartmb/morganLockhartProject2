@@ -22,8 +22,7 @@
         <div class="heroContainer">
 
             <nav class="mainNav blogNav">
-                <div class="wrapper">
-                    <!-- The wrapper is nested inside the nav so that the background color of the nav can span the full width of the page -->
+                <div class="wrapper"> <!-- The wrapper is nested inside the nav so that the background color of the nav can span the full width of the page -->
                     <ul>
                         <li>
                             <a href="index.html">Planted</a>
@@ -55,47 +54,41 @@
     <!-- This main element contains all of the content between the header and the footer (which is divided into the aside and the blogContent section), and is styled with the wrapper class -->
     <main class="blogPage wrapper" id="mainContent">
 
-        <aside>
+        <!-- This .blogContent section contains an article (which itself contains the blog post and it's associated comments) and the comment form -->
+        <section class="blogContent">
 
-            <div class="imgContainer">
-                <img src="assets/asideWindow.jpg" alt="outside of a beautiful old cement building looking at a wooden window frame with lace curtains">
-            </div>
-
-            <div class="asideText">
-                <h3>About Planted</h3>
-                <p>Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="index.html#about"><span>Find
-                            out more.</span></a></p>
-                <h3>Recent posts</h3>
-                <ul>
-                    <li>Donec facilisis tortor ut</li>
-                    <li>Augue lacinia at viverra</li>
-                    <li>Semper sed sapien metus</li>
-                    <li>Scelerisque nec pharetra id</li>
-                </ul>
-            </div>
-
-        </aside>
-
-        <section class="blogContent"> <!-- This .blogContent section contains an article (which itself contains the blog post and it's associated comments) and the comment form -->
-
-            <article class="blogPost"> <!-- The article encloses the blog post and it's associated comments -->
+            <!-- The article encloses the blog post and it's associated comments -->
+            <article class="blogPost"> 
 
                 <div class="imgContainer">
                     <img src="assets/postImage.jpg" alt="close up view of some leaves against a beige wall">
                 </div>
 
-                <!-- This is the blog post itself -->
-                <section class="blogText">
+                <section class="blogText"> <!-- This section is the blog post itself -->
                     <h2>Our mission at Planted</h2>
                     <p class="byline">Monday January 21st, 2019 by <span>Yousra</span></p>
-                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
-                    <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Plasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vei sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.</p>
-                    <p>Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim,
+                        pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet
+                        risus. Nam tempus vel odio vitae aliquam.</p>
+                    <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante
+                        venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis
+                        eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit
+                        dolor mollis nec. Donec viverra eleifend lacu.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget
+                        imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet
+                        arcu aliquet, molestie justo at, auctor nunc. Plasellus ligula ipsum, volutpat eget semper id,
+                        viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit
+                        gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at
+                        suscipit. Praesent facilisis dolor sapien, vei sodales augue mollis ut. Mauris venenatis magna
+                        eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit
+                        non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros
+                        magna faucibus sem, in condimentum est augue tristique risus.</p>
+                    <p>Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.
+                        Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae
+                        aliquam.</p>
                 </section>
 
-                <!-- This is the blog posts's associated comments section -->
-                <section class="commentContainer">
+                <section class="commentContainer"> <!-- This section is the blog posts's associated comments section -->
                     <h3>Comments:</h3>
 
                     <div class="blogComment">
@@ -129,7 +122,7 @@
             </article> <!-- This is the end of the article containing the blog and it's comments -->
 
             <!-- This is the comment form -->
-            <form action="" method="POST" name="submitComment" class="submitComment">
+            <form action="" method="POST" name="submitComment" class="submitComment"> 
 
                 <div class="inputs">
                     <label for="name" class="visuallyHidden">Name</label>
@@ -146,14 +139,36 @@
 
             </form>
 
-        </section> <!-- This is the end of the .blogContent section -->
+        </section> <!-- This is the end of the .blogContent section (the blog, it's comments, and the form) -->
 
-    </main>
+        <!-- In the mobile layout, the aside comes after the blog entry. In the desktop layout, the order of the aside is changed so that it moves up to the left of the blog entry. I chose this structure because this was the order I wanted the user to tab through the page (blog first, then aside). -->
+        <aside> 
+
+            <div class="imgContainer">
+                <img src="assets/asideWindow.jpg" alt="outside of a beautiful old cement building looking at a wooden window frame with lace curtains">
+            </div>
+
+            <div class="asideText">
+                <h3>About Planted</h3>
+                <p>Nam dapibus nisi vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="index.html#about"><span>Find
+                            out more.</span></a></p>
+                <h3>Recent posts</h3>
+                <ul>
+                    <li>Donec facilisis tortor ut</li>
+                    <li>Augue lacinia at viverra</li>
+                    <li>Semper sed sapien metus</li>
+                    <li>Scelerisque nec pharetra id</li>
+                </ul>
+            </div>
+
+        </aside>
+
+    </main> <!-- This is the end of the main element containing the aside and the blogContent section -->
 
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
-    
+
 </body>
 
 </html>
